@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ClearCache.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FormFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\_projects\ERP\Current\Deployment\Server\Apps\MetaUI\Erp.UI.AbcCodeEntry</Value>
+    </Setting>
+    <Setting Name="CacheFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\_projects\ERP\Current\Deployment\Server\Apps\MetaUI\Erp.UI.AbcCodeEntry\cache</Value>
+    </Setting>
+    <Setting Name="TrackFiles" Type="System.String" Scope="User">
+      <Value Profile="(Default)">*.jsonc</Value>
+    </Setting>
+    <Setting Name="ClearFiles" Type="System.String" Scope="User">
+      <Value Profile="(Default)">*.json;*.txt</Value>
+    </Setting>
+    <Setting Name="CacheFolderName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">cache</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
