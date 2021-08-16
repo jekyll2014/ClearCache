@@ -23,7 +23,7 @@ namespace ClearCache
             _trackFiles = Settings.Default.TrackFileMask;
             _clearFiles = Settings.Default.ClearFileMaskList.Split(';', StringSplitOptions.RemoveEmptyEntries);
             _cacheFolderName = Settings.Default.CacheFolderName;
-            checkBox_enabled.Enabled = CheckAllDirectoryExists();
+            CheckAllDirectoryExists();
         }
 
         private void Button_formFolder_Click(object sender, EventArgs e)
@@ -43,7 +43,7 @@ namespace ClearCache
                 }
             }
 
-            checkBox_enabled.Enabled = CheckAllDirectoryExists();
+            CheckAllDirectoryExists();
         }
 
         private void CheckBox_enabled_CheckedChanged(object sender, EventArgs e)
@@ -111,12 +111,17 @@ namespace ClearCache
                 textBox_cacheFolder.Text = _cacheFolder;
             }
 
-            checkBox_enabled.Enabled = CheckAllDirectoryExists();
+            CheckAllDirectoryExists();
         }
 
         private bool CheckAllDirectoryExists()
         {
             var result = Directory.Exists(_formFolder); // && Directory.Exists(_cacheFolder);
+            checkBox_enabled.Enabled = result;
+            if (!result)
+            {
+                checkBox_enabled.Checked = false;
+            }
 
             return result;
         }
