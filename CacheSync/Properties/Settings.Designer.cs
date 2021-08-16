@@ -52,10 +52,10 @@ namespace ClearCache.Properties {
         [global::System.Configuration.DefaultSettingValueAttribute("*.jsonc")]
         public string TrackFileMask {
             get {
-                return ((string)(this["TrackFiles"]));
+                return ((string)(this["TrackFileMask"]));
             }
             set {
-                this["TrackFiles"] = value;
+                this["TrackFileMask"] = value;
             }
         }
         
@@ -64,10 +64,10 @@ namespace ClearCache.Properties {
         [global::System.Configuration.DefaultSettingValueAttribute("*.json;*.txt")]
         public string ClearFileMaskList {
             get {
-                return ((string)(this["ClearFiles"]));
+                return ((string)(this["ClearFileMaskList"]));
             }
             set {
-                this["ClearFiles"] = value;
+                this["ClearFileMaskList"] = value;
             }
         }
         

@@ -8,10 +8,10 @@
     <Setting Name="CacheFolder" Type="System.String" Scope="User">
       <Value Profile="(Default)">C:\_projects\ERP\Current\Deployment\Server\Apps\MetaUI\Erp.UI.AbcCodeEntry\cache</Value>
     </Setting>
-    <Setting Name="TrackFiles" Type="System.String" Scope="User">
+    <Setting Name="TrackFileMask" Type="System.String" Scope="User">
       <Value Profile="(Default)">*.jsonc</Value>
     </Setting>
-    <Setting Name="ClearFiles" Type="System.String" Scope="User">
+    <Setting Name="ClearFileMaskList" Type="System.String" Scope="User">
       <Value Profile="(Default)">*.json;*.txt</Value>
     </Setting>
     <Setting Name="CacheFolderName" Type="System.String" Scope="User">
