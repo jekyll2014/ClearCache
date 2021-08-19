@@ -67,7 +67,8 @@ namespace ClearCache
                 return true;
             }
 
-            notifyIcon1.Text = "Active";
+            var formName = _formFolder.Substring(_formFolder.LastIndexOf('\\') + 1);
+            notifyIcon1.Text = "Active: " + formName;
             try
             {
                 _watcher = new FileSystemWatcher(_formFolder) {
